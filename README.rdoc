@@ -1,0 +1,5 @@
+Welcome to Photo overflow
+
+Our production url is: www.evening-island-5100.herokuapp.com
+
+Our staging url is: http://frozen-taiga-2387.herokuapp.com/
