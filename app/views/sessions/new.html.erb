@@ -1,9 +1,7 @@
 <div class="user_creation">
   <%= form_tag login_path do %>
-  <fieldset>
     <%= text_field_tag :username, nil, placeholder: 'username' %>
     <%= password_field_tag :password, nil, placeholder: 'password' %>
-    <%= submit_tag("Login") %>
-  </fieldset>
+    <%= submit_tag "Login" %>
   <% end %>
 </div>

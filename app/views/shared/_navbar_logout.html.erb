@@ -1,0 +1,12 @@
+<!-- <nav> -->
+  <% if @current_user %>
+    
+    <%= link_to logout_path do %>
+    <i class="icon-off"></i><br />Log out
+    <% end %>
+   <% else %>
+   <%= link_to login_path do %>
+   <i class="icon-key"></i><br />Log in
+   <% end %>
+  <% end %> 
+<!-- </nav> -->

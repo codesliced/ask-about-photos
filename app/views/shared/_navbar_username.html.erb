@@ -1,0 +1,14 @@
+<!-- <nav> -->
+  <% if @current_user %>
+    <%= link_to user_path(@current_user) do %>
+    <i class="icon-user"></i><br />
+    <%= @current_user.username %>
+    <% end %>
+  <% else %>
+   <%= link_to signup_path  do %>
+   <i class="icon-user"></i><br /> Sign Up
+   <% end %>
+  <% end %> 
+<!-- </nav> -->
+
+

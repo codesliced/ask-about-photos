@@ -7,18 +7,47 @@
   <script src="//use.edgefonts.net/arapey.js"></script>
 <script src="//use.edgefonts.net/josefin-sans.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-  <%= link_to "PhotoOverflow", root_path %>
-  <%= render 'shared/navbar' %>  
-</header>
-<div class="ask_q"><%= link_to ask_question_path  do %>
-<i class="icon-question-sign"></i> Ask a question
-  <% end %>
-</div>
-<div class="container">
+	<!-- Header -->
+	<div class="container">
+	    <div class="header row">
+	        <div class="span12">
+	            <div class="navbar">
+	                <div class="navbar-inner">
+	                    <h1>
+	                        <%= link_to "PhotoOverflow", root_path %>
+	                    </h1>
+	                    <div class="nav-collapse collapse">
+	                        <ul class="nav pull-right">
+	                            <li>
+	                                <%= link_to root_path do %>
+	                                <i class="icon-home"></i><br />Home
+	                                <% end %>
+	                            </li>
+	                            <li>
+	                                <%= link_to ask_question_path  do %>
+	                                <i class="icon-question-sign"></i><br />Ask a question
+	                                  <% end %>
+	                            </li>
+			                        <li>
+	                                <%= render 'shared/navbar_username' %> 
+	                            </li>
+	                            <li>
+	                            	  <%= render 'shared/navbar_logout' %> 
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+<div class="presentation container">
 <%= yield %>
 </div>
 </body>
