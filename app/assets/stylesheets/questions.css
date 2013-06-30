@@ -1,78 +1,4 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-}
-
-a:-webkit-any-link {
-    text-decoration: none;
-    color: #B82D22;
-}
-
-a:hover {
-    color: #061021;
-}
-
-html, body, ul, ol, li, form,
-fieldset, legend {
-    background-color: #f2e8e1;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-}
-
-fieldset, img {
-    border: 0;
-}
-
-.user_creation input, textarea, select, button {
-    font-family: arapey, sans-serif;
-    font-size: 110%;
-    line-height: 1.1;
-}
-
-button {
-    width: auto;
-    overflow: visible;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-li {
-    list-style: none;
-}
-
-header {
-  background-color: #f2e8e1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 150px;
-  color: #FFF4F0;
-  font-size: 60px;
-  font-family: arapey, sans-serif;
-  margin-left: 20px;
-}
-
-header a:link {
-    text-decoration: none;
-    color: #B82D22;
-}
-
-header a:hover {
-    color: #061021;
-}
-
-.username {
+/*.username {
   float: right;
   font-size: 12px;
   line-height: 16px;
@@ -109,15 +35,6 @@ header a:hover {
 .answer_upload {
   margin-top:20px;
 }
-/*.answer_form input {
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-
-.answer_form input[type="text"] {
-  margin-bottom: 20px;
-  margin-left: 10px;
-}*/
 
 .answer_form input, textarea {
     font-family: arapey, sans-serif;
@@ -126,15 +43,6 @@ header a:hover {
     text-align: left;
 }
 
-/*.answer_form input[type="textarea"] {
-  margin-bottom: 20px;
-  margin-left: 10px;
-  width: 300px;
-}*/
-
-/*.answer_form label {
-  margin-right: 20px;
-}*/
 
 .result-image.example { display: none;}
 .result-image {
@@ -256,4 +164,4 @@ input[type=submit]:hover {
 .comment_on_question {
   margin: 10px auto;
   text-align: center;
-}
+}*/
