@@ -22,14 +22,14 @@
 <p><%= render partial: 'comments/new', locals: { commentable: @question } %></p>
 </div>
 
-<div class="question_answers">
-<% @question.answers.each do |answer| %>
-  <%= render partial: 'answers/answer', locals: { answer: answer } %>
-<% end %>
-</div>
-
 <div class="answer_form">
   <h3>Answers</h3>
+
+  <div class="question_answers">
+  <% @question_answers.each do |answer| %>
+    <%= render partial: 'answers/answer', locals: { answer: answer } %>
+  <% end %>
+  </div>  
   <%= render "answers/new" %>
 </div>
 
