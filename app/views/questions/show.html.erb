@@ -26,7 +26,7 @@
   <h3>Answers</h3>
 
   <div class="question_answers">
-  <% @question_answers.each do |answer| %>
+  <% @question.answers.each do |answer| %>
     <%= render partial: 'answers/answer', locals: { answer: answer } %>
   <% end %>
   </div>  
