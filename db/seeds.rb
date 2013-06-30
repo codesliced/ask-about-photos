@@ -4,7 +4,7 @@
 users = <<-USERS
 lungegrammer
 shotel6
-reelpeet
+steelpeet
 frissata
 dankbowl
 cpfeist
@@ -12,7 +12,7 @@ miltcross
 smartchang
 realisticyield
 codesliced
-shotelidayinn
+shotolidayinn
 hannamcgee
 USERS
 
