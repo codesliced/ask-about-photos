@@ -20,3 +20,6 @@
 # Ignore application configuration
 /config/application.yml
 /public/uploads
+
+#Ignore vendor bundle
+vendor/bundle
