@@ -27,7 +27,7 @@
 
   <div class="question_answers">
   <% @question.answers.each do |answer| %>
-    <%= render partial: 'answers/answer', locals: { answer: answer } %>
+    <%= render partial: 'answers/show', locals: { answer: answer } %>
   <% end %>
   </div>  
   <%= render "answers/new" %>
