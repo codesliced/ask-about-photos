@@ -17,10 +17,7 @@ class AnswersController < ApplicationController
   end
 
   def show
-    p "~~~~~~~~~~~~~~~~~~"
-    p params
-    
-    @question = Question.find(params[:answer][:question_id]
+    @question = Question.find(params[:answer][:question_id])
     @question_answers = Answer.find_all_by_question_id(@question.id)
   end
 
