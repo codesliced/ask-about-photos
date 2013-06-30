@@ -34,6 +34,7 @@ end
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'figaro'
+gem 'thin'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
