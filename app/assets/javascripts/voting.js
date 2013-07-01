@@ -5,7 +5,7 @@ $(document).ready(function() {
     link = $(this)
     data = $(this).attr('href')
     $.post(data, function(response) {
-      link.siblings('span').html(response.votes_count);
+      link.siblings('#vote-count').html(response.votes_count);
 
     });
   });
