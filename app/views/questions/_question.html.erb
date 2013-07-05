@@ -5,7 +5,9 @@
         </span>
         <div class="title_username"> Asked by: <%= question.user.username %></div>
         <div class="photo_upload">
+          <%= link_to question_path(question.id) do %>
           <img src="<%= question.path || question.file %>">
+          <% end %>
         </div>
     </div>
 </li>
