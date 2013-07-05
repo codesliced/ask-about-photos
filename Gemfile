@@ -25,35 +25,23 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
-group :development, :test do 
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
-end
-
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'figaro'
 gem 'thin'
+gem 'dalli'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 
 # To use debugger
 gem 'debugger'
 
-group :test, :development do
+group :development, :test do 
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
-  gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'rspec-rails'
+  gem 'rack-mini-profiler'
 end
 
 gem "fog", "~> 1.3.1"
