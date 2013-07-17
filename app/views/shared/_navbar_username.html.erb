@@ -2,11 +2,11 @@
   <% if @current_user %>
     <%= link_to user_path(@current_user) do %>
     <i class="icon-user"></i><br />
-    <%= @current_user.username %>
+    <span class="nav-text"><%= @current_user.username %></span>
     <% end %>
   <% else %>
    <%= link_to signup_path  do %>
-   <i class="icon-user"></i><br /> Sign Up
+   <i class="icon-user"></i><br /> <span class="nav-text">Sign Up</span>
    <% end %>
   <% end %> 
 <!-- </nav> -->

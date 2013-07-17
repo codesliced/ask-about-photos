@@ -2,11 +2,11 @@
   <% if @current_user %>
     
     <%= link_to logout_path do %>
-    <i class="icon-off"></i><br />Log out
+    <i class="icon-off"></i><br /><span class="nav-text">Log out</span>
     <% end %>
    <% else %>
    <%= link_to login_path do %>
-   <i class="icon-key"></i><br />Log in
+   <i class="icon-key"></i><br /><span class="nav-text">Log in</span>
    <% end %>
   <% end %> 
 <!-- </nav> -->
