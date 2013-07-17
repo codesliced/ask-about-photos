@@ -30,11 +30,13 @@ gem 'mini_magick'
 gem 'figaro'
 gem 'thin'
 gem 'dalli'
-gem 'newrelic_rpm'
 
 
 # To use debugger
 gem 'debugger'
+
+gem "fog", "~> 1.3.1"
+gem 'newrelic_rpm'
 
 group :development, :test do 
   gem 'better_errors'
@@ -44,8 +46,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rack-mini-profiler'
 end
-
-gem "fog", "~> 1.3.1"
 
 group :test do
   gem 'database_cleaner'
