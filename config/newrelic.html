@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>New Relic | Heroku Dev Center</title>
+<link href="https://devcenter.heroku.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="https://devcenter.heroku.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="alternate" type="application/atom+xml" title="Heroku Recent Articles" href="http://feeds.feedburner.com/herokudevcenterarticles">
+<link rel="alternate" type="application/atom+xml" title="Heroku Changelog" href="http://feeds.feedburner.com/herokuchangelog">
+<link rel="search" type="application/opensearchdescription+xml" title="Heroku Dev Center" href="/opensearch.xml">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="/jKFQgOHIvc9cCMhNy4HqHVrqRguPSMa5EIiY0hgcBM=" name="csrf-token">
+<meta name="description" content="New Relic Application Performance Monitoring (APM) is an on-demand performance management solution for web applications deployed to Heroku.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@herokudevcenter">
+<meta name="twitter:title" content="New Relic | Heroku Dev Center">
+<meta name="twitter:description" content="New Relic Application Performance Monitoring (APM) is an on-demand performance management solution for web applications deployed to Heroku.">
+<meta name="google-site-verification" content="V3T3n-QnyNOZlSVZgEfdXaKkJKyfw2yIP55nR00C8ZU">
+<link href="/assets/public-fb4bc9f2cf437be6097ee44eb5ca17ea.css" media="screen" rel="stylesheet" type="text/css">
+<!--[if IE 6]>
+    <link href="https://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]--><script type="text/javascript">
+//<![CDATA[
+
+      var activeNav = false,
+          loggedIn = true,
+          displayNotifications = false;
+
+//]]>
+</script><script src="/assets/public-1d9af5dd59aa9f0218abee2ffa1a8675.js" type="text/javascript"></script><!--[if lt IE 9]>
+    <script src="/assets/public/vendor/selectivizr-1.0.min-5a8a90122907054d929cf1847ea1b9fc.js" type="text/javascript"></script>
+    <![endif]--><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+</head>
+<body>
+      <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-JD26" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-JD26');</script><!-- End Google Tag Manager --><div class="heroku-header">
+  <div class="heroku-header-container container">
+
+    <div class="heroku-header-hgroup">
+      <a href="/">
+        heroku
+        <strong>dev center</strong>
+      </a>
+    </div>
+
+    <div class="heroku-header-nav">
+      <select class="js-select-nav"><option selected value="https://devcenter.heroku.com">Dev Center</option>
+<option value="https://www.heroku.com/pricing/">Pricing</option>
+<option value="https://help.heroku.com/">Support</option>
+<option value="https://www.heroku.com/contact">Contact</option>
+<option value="https://dashboard.heroku.com/apps">My Apps</option>
+<option value="/auth/logout?back_to=%2Farticles%2Fnewrelic">Logout</option></select><ul>
+<li>
+          <a href="https://www.heroku.com/pricing/">Pricing</a>
+        </li>
+        <li>
+          <a href="https://help.heroku.com/">Support</a>
+        </li>
+        <li>
+          <a href="https://www.heroku.com/contact">Contact</a>
+        </li>
+        <li>
+          <a href="https://dashboard.heroku.com/apps">My Apps</a>
+        </li>
+        <li>
+          <a href="/auth/logout?back_to=%2Farticles%2Fnewrelic">Logout</a>
+        </li>
+      </ul>
+</div>
+  </div>
+</div>
+    <div class="devcenter-header">
+  <div class="devcenter-header-container container">
+    <ul class="main-nav">
+<li><a class="" href="/articles/quickstart">Get<span class="desktop-only">ting</span> started</a></li>
+      <li><a class="" href="/categories/reference">Reference</a></li>
+      <li><a class="active" href="/categories/learning">Learning</a></li>
+    </ul>
+<form class="nav-search" action="/articles" id="home-search" method="GET">
+      <input class="js-search" id="q" name="q" placeholder="search" required="required" type="text">
+</form>
+  </div>
+</div>
+    <section class="site-feedback-trigger"><a href="#">Feedback</a>
+</section><div class="site-feedback-dialog">
+  <header><h2>Tell us what do you think about Dev Center</h2>
+  </header><form accept-charset="UTF-8" action="/site_feedbacks" class="new_site_feedback" id="new_site_feedback" method="post">
+<div style="margin:0;padding:0;display:inline">
+<input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/jKFQgOHIvc9cCMhNy4HqHVrqRguPSMa5EIiY0hgcBM=">
+</div>
+    <textarea cols="40" id="site_feedback_text" name="site_feedback[text]" rows="20"></textarea><input class="email" id="email" name="email" type="text" value=""><input id="site_feedback_sent_from_url" name="site_feedback[sent_from_url]" type="hidden" value="https://devcenter.heroku.com/articles/newrelic"><div class="footer">
+      <span class="support">
+        For support issues, please visit our <a href="https://help.heroku.com/">support channels</a>
+      </span>
+      <span class="actions">
+        <a href="#" class="cancel">Cancel</a>
+        <button name="button" type="submit">Submit</button>
+      </span>
+    </div>
+</form>
+</div>
+
+    <div id="sheet">
+      <div class="sheet-container container">
+        <div class="select-secondary-nav">
+  <select class="js-select-nav"><option class="option" selected value="#">
+        Add-ons
+      </option>
+<option class="option" value="/categories/add-on-documentation">
+        More in Add-ons...
+      </option>
+<optgroup label="Learning">
+<option class="option" value="/categories/application-architecture">
+              Application Architecture
+            </option>
+<option class="option" value="/categories/ruby">
+              Ruby
+            </option>
+<option class="option" value="/categories/java">
+              Java
+            </option>
+<option class="option" value="/categories/clojure">
+              Clojure
+            </option>
+<option class="option" value="/categories/python">
+              Python
+            </option>
+<option class="option" value="/categories/scala">
+              Scala
+            </option>
+<option class="option" value="/categories/nodejs">
+              Node.js
+            </option>
+<option class="option" value="/categories/mobile">
+              Mobile
+            </option>
+<option class="option" value="/categories/database">
+              Database
+            </option>
+<option class="option" value="/categories/miscellaneous">
+              Miscellaneous
+            </option>
+<option class="option" value="/categories/add-on-documentation">
+              Add-ons
+            </option>
+</optgroup></select>
+</div>
+
+<ul class="secondary-nav nocontent ">
+<li class="section">
+      <h2>Learning</h2>
+        <ul>
+<li class="">
+              <a href="/categories/application-architecture">Application Architecture</a>
+            </li>
+        </ul>
+<ul>
+<li class="">
+              <a href="/categories/ruby">Ruby</a>
+            </li>
+            <li class="">
+              <a href="/categories/java">Java</a>
+            </li>
+            <li class="">
+              <a href="/categories/clojure">Clojure</a>
+            </li>
+            <li class="">
+              <a href="/categories/python">Python</a>
+            </li>
+            <li class="">
+              <a href="/categories/scala">Scala</a>
+            </li>
+            <li class="">
+              <a href="/categories/nodejs">Node.js</a>
+            </li>
+        </ul>
+<ul>
+<li class="">
+              <a href="/categories/mobile">Mobile</a>
+            </li>
+            <li class="">
+              <a href="/categories/database">Database</a>
+            </li>
+        </ul>
+<ul>
+<li class="">
+              <a href="/categories/miscellaneous">Miscellaneous</a>
+            </li>
+        </ul>
+<ul>
+<li class="active">
+              <a href="/categories/add-on-documentation">Add-ons</a>
+            </li>
+        </ul>
+</li>
+</ul>
+<section class="main"><article class="article autolink "><div id="admin-tabs"></div>
+    
+    <div class="contribution">
+  <img alt="New Relic" src="https://s3.amazonaws.com/assets.heroku.com/addons.heroku.com/catalogs/144/original.png"><div>
+    <h4>This article was contributed by <a href="https://addons.heroku.com/newrelic" target="_blank">New Relic</a>
+</h4>
+    <p>
+      Monitor, troubleshoot, and tune production web applications.
+    </p>
+  </div>
+</div>
+
+    <header><h1 class="doc">New Relic</h1>
+    </header><div class="padder">
+
+
+
+      <p class="meta">
+        Last Updated: 16 July 2013
+      </p>
+
+      <p class="tags">
+        <a href="/tags/debugging">debugging</a> <a href="/tags/java">java</a> <a href="/tags/monitoring">monitoring</a> <a href="/tags/new-relic">new relic</a> <a href="/tags/performance">performance</a>
+      </p>
+
+        <section id="table-of-contents"><h3 id="toc">Table of Contents</h3>
+  <ul>
+<li><a href="#supported-languages-and-frameworks">Supported languages and frameworks</a></li>
+    <li><a href="#standard-add-on-installation">Standard add-on installation</a></li>
+    <li><a href="#ruby-configuration">Ruby configuration</a></li>
+    <li><a href="#java-configuration">Java configuration</a></li>
+    <li><a href="#python-configuration">Python configuration</a></li>
+    <li><a href="#clojure-configuration">Clojure configuration</a></li>
+    <li><a href="#view-your-performance-data">View your performance data</a></li>
+    <li><a href="#interpreting-new-relic-request-queueing">Interpreting New Relic request queueing</a></li>
+  </ul></section><p>
+<a href="https://addons.heroku.com/addons/newrelic" target="_blank" title="Link opens in new window">New Relic Application Performance Monitoring (APM)</a> is an <a href="http://addons.heroku.com" target="_blank" title="Link opens in new window">add-on</a> for on-demand web application performance management. New Relic APM offers seamless integration with the Heroku platform, enabling immediate and automatic access to New Relic’s comprehensive capabilities for monitoring, troubleshooting and tuning web applications.
+</p>
+
+<p>
+Adding New Relic APM to an application provides insight into:
+</p>
+
+<ul>
+<li>Customer satisfaction, via real-time end user experience monitoring</li>
+  <li>Health and availability of your entire application, via application monitoring</li>
+  <li>Web server resource data for Windows and Linux, via server monitoring</li>
+</ul>
+<h2 id="supported-languages-and-frameworks">Supported languages and frameworks</h2>
+
+<p>
+The New Relic APM add-on is available for:
+</p>
+
+<ul>
+<li>Ruby</li>
+  <li>Java</li>
+  <li>Python</li>
+  <li>Clojure</li>
+</ul>
+<p>
+If you’re using Ruby, the add-on will work with any Rack app, including Rails and Sinatra.
+</p>
+
+<h2 id="standard-add-on-installation">Standard add-on installation</h2>
+
+<p>To install the add-on, run:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> heroku addons:add newrelic:standard
+</span></pre></div>
+</div>
+
+
+<p>
+Installing the add-on will automatically point you to the integrated Heroku/New Relic account. The add-on automatically creates a private New Relic account, and configures access for Heroku servers. New Relic APM will begin monitoring application performance, end user experience, and server performance collected after the add-on is installed.
+</p>
+
+<h3 id="upgrading-from-an-existing-new-relic-installation">Upgrading from an existing New Relic installation</h3>
+
+<p>If New Relic APM is already installed, simply install the add-on using the steps above to upgrade.</p>
+
+<h2 id="ruby-configuration">Ruby configuration</h2>
+
+<p>To start seeing data from your application after installing the New Relic add-on you need to install and configure the Ruby agent gem.</p>
+
+<ol>
+<li>
+<a href="#add-gem">Add the Ruby agent gem</a> to your Gemfile, bundle and commit your changes.</li>
+<li>
+<a href="#copy-yml">Copy newrelic.yml</a> to config/newrelic.yml.</li>
+<li>
+<a href="#copy-yml">Set your application name</a> using a heroku environment variable.</li>
+</ol>
+<p><b id="add-gem">1. Add the New Relic gem to your Gemfile:</b>
+<br>Add this line to your Gemfile</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>gem <span class="string"><span class="delimiter">'</span><span class="content">newrelic_rpm</span><span class="delimiter">'</span></span>
+</pre></div>
+</div>
+
+
+<p>Make sure this line is outside any groups in your Gemfile (e.g. development or test).
+After adding the gem, bundle install and commit your changes to Gemfile and Gemfile.lock.</p>
+
+<div class="callout">
+<ul>
+<li><a href="/articles/rails-unicorn">Unicorn directions on Heroku</a></li>
+  <li><a href="http://unicorn.bogomips.org/Unicorn/Configurator.html#method-i-preload_app">Unicorn directions on Unicorn</a></li>
+</ul>
+</div>
+
+<p>If you are using Unicorn you will need the <code>preload_app true</code> directive in your <b>unicorn.rb</b>.</p>
+
+<p>When starting Unicorn you must manually specify the path to your configuration file in order for it to take effect. To do this, pass the <code>-c &lt;path&gt;</code> option to the unicorn invocation you use to start your server. This will be in your <code>Procfile</code>.</p>
+
+<p><b id="copy-yml">2. Copy newrelic.yml into your application</b>
+<br>Download newrelic.yml and save it at config/newrelic.yml, or run this curl command from the root of your application.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="string">curl https://raw.github.com/gist/2253296/newrelic.yml &gt; config/newrelic.yml
+</span></pre></div>
+</div>
+
+
+<p><b id="set-name">3. Set your application name</b>
+<br>Set the name of your application as it will appear on the New Relic dashboard.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="string">heroku config:set NEW_RELIC_APP_NAME="YOUR APP NAME GOES HERE"
+</span></pre></div>
+</div>
+
+
+<h3 id="using-new-relic-from-a-rack-app">Using New Relic from a Rack app</h3>
+
+<div class="callout"><p>If you are using New Relic with a standard Rails app, you do not need to follow the steps in this section.</p></div>
+
+<p>When using New Relic with a non-Rails app, you need to manually install the plugin into your code repo. For example, in a Sinatra app, add the <code>newrelic</code> gem to your <code>Gemfile</code>, then add the following code to your app:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>configure <span class="symbol">:production</span> <span class="keyword">do</span>
+  require <span class="string"><span class="delimiter">'</span><span class="content">newrelic_rpm</span><span class="delimiter">'</span></span>
+<span class="keyword">end</span>
+</pre></div>
+</div>
+
+
+<p>Next, specify your application environment:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="string">heroku config:set RACK_ENV=production
+</span></pre></div>
+</div>
+
+
+<p>Finally, commit and push to Heroku:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> git commit -m "Added New Relic Plugin"
+</span><span class="comment">$</span><span class="function"> git push heroku master
+</span></pre></div>
+</div>
+
+
+<h3 id="bamboo-configuration">Bamboo configuration</h3>
+
+<div class="callout"><p>We do not install the New Relic plugin if we detect “newrelic_rpm” gem in your Gemfile.</p></div>
+
+<p>Heroku will automatically configure your Ruby app with the latest New Relic plugin on your next <code>git push</code>.  This is the same as running:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function">  script/plugin install git://github.com/newrelic/rpm.git
+</span></pre></div>
+</div>
+
+
+<p>We autoconfigure your <code>config/newrelic.yml</code> file with the proper access keys.</p>
+
+<h3 id="customizing-the-bamboo-configuration">Customizing the Bamboo configuration</h3>
+
+<p>New Relic allows you customize certain settings by editing your configuration file.  Heroku automatically writes this out, so you can’t directly edit the file.  By setting certain configuration variables, you can change how the configuration file is generated.</p>
+
+<p>Currently we support setting a custom apdex score, enabling parameter capture, and customizing the error collector.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> heroku config:set NEW_RELIC_APDEX=0.4
+</span><span class="comment">$</span><span class="function"> heroku config:set NEW_RELIC_CAPTURE_PARAMS=TRUE
+</span><span class="comment">$</span><span class="function"> heroku config:set NEW_RELIC_ERROR_COLLECTOR_ENABLED=false
+</span><span class="comment">$</span><span class="function"> heroku config:set NEW_RELIC_ERROR_COLLECTOR_CAPTURE_SOURCE=false
+</span><span class="comment">$</span><span class="function"> heroku config:set NEW_RELIC_ERROR_COLLECTOR_IGNORE_ERRORS=ActionController::RoutingError
+</span></pre></div>
+</div>
+
+
+<h2 id="java-configuration">Java configuration</h2>
+
+<div class="callout">
+<p><b>Non-Maven Java apps</b><br>
+Download the <a href="http://download.newrelic.com/newrelic/java-agent/newrelic-agent/" target="_blank" title="Link opens in new window">latest Java agent</a> and unzip it into the root of your project.<br>
+This will create a directory called <b>newrelic</b> with the necessary files. Add it to your project with <code>$ git add newrelic</code>.<br>
+Enable it by adding <code>-javaagent:newrelic/newrelic.jar</code> to your <code>JAVA_OPTS</code>.</p>
+</div>
+
+<h3 id="add-the-new-relic-agent-as-a-maven-dependency">Add the New Relic agent as a Maven dependency</h3>
+
+<p>Find the <a href="https://repository.sonatype.org/index.html#nexus-search;quick~newrelic" target="_blank" title="Link opens in new window">latest Java agent version</a>.</p>
+
+<p>In your <code>pom.xml</code> add New Relic as a Maven dependency replacing X.X.X with the latest version.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="tag">&lt;dependency&gt;</span>
+    <span class="tag">&lt;groupId&gt;</span>com.newrelic.agent.java<span class="tag">&lt;/groupId&gt;</span>
+    <span class="tag">&lt;artifactId&gt;</span>newrelic-agent<span class="tag">&lt;/artifactId&gt;</span>
+    <span class="tag">&lt;version&gt;</span>X.X.X<span class="tag">&lt;/version&gt;</span>
+    <span class="tag">&lt;scope&gt;</span>provided<span class="tag">&lt;/scope&gt;</span>
+<span class="tag">&lt;/dependency&gt;</span>
+</pre></div>
+</div>
+
+
+<p>Customize the build section so it always names the <code>newrelic-agent.jar</code> consistently.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="tag">&lt;build&gt;</span>
+  <span class="tag">&lt;plugins&gt;</span>
+    <span class="tag">&lt;plugin&gt;</span>
+      <span class="tag">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/groupId&gt;</span>
+      <span class="tag">&lt;artifactId&gt;</span>maven-dependency-plugin<span class="tag">&lt;/artifactId&gt;</span>
+      <span class="tag">&lt;version&gt;</span>2.6<span class="tag">&lt;/version&gt;</span>
+      <span class="tag">&lt;executions&gt;</span>
+        <span class="tag">&lt;execution&gt;</span>
+          <span class="tag">&lt;id&gt;</span>copy-new-relic<span class="tag">&lt;/id&gt;</span>
+          <span class="tag">&lt;phase&gt;</span>package<span class="tag">&lt;/phase&gt;</span>
+         <span class="tag">&lt;goals&gt;</span>
+           <span class="tag">&lt;goal&gt;</span>copy-dependencies<span class="tag">&lt;/goal&gt;</span>
+          <span class="tag">&lt;/goals&gt;</span>
+          <span class="tag">&lt;configuration&gt;</span>
+            <span class="tag">&lt;includeGroupIds&gt;</span>com.newrelic.agent.java<span class="tag">&lt;/includeGroupIds&gt;</span>
+            <span class="tag">&lt;includeArtifactIds&gt;</span>newrelic-agent<span class="tag">&lt;/includeArtifactIds&gt;</span>
+            <span class="tag">&lt;stripVersion&gt;</span>true<span class="tag">&lt;/stripVersion&gt;</span>
+          <span class="tag">&lt;/configuration&gt;</span>
+        <span class="tag">&lt;/execution&gt;</span>
+      <span class="tag">&lt;/executions&gt;</span>
+    <span class="tag">&lt;/plugin&gt;</span>
+  <span class="tag">&lt;/plugins&gt;</span>
+<span class="tag">&lt;/build&gt;</span>
+</pre></div>
+</div>
+
+
+<h3 id="create-a-new-relic-configuration-file">Create a New Relic configuration file</h3>
+
+<p>Create a <code>newrelic.yml</code> file next to your <code>pom.xml</code>.  Use the <a href="https://newrelic.com/docs/java/java-agent-config-file-template">template</a> as a starting point.  This should be checked into your repo.  If you want to put it elsewhere, the location can be changed with a <a href="https://newrelic.com/docs/java/java-agent-configuration#System_Properties" target="_blank" title="Link opens in new window">System Property</a> or the <code>NEWRELIC_HOME</code> environment variable.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> git add newrelic.yml
+</span></pre></div>
+</div>
+
+
+<h3 id="push-these-changes-to-your-application">Push these changes to your application:</h3>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> git commit -m 'add newrelic'
+</span><span class="comment">$</span><span class="function"> git push heroku master
+</span></pre></div>
+</div>
+
+
+<h3 id="configuration">Configuration</h3>
+
+<p>Adding the <a href="https://addons.heroku.com/newrelic" target="_blank" title="Link opens in new window">New Relic Add-on</a> will set the following config vars on your app:</p>
+
+<ul>
+<li><code>NEW_RELIC_LICENSE_KEY</code></li>
+<li><code>NEW_RELIC_LOG</code></li>
+</ul>
+<p>These will override corresponding values from <code>newrelic.yml</code>.</p>
+
+<h3 id="enable-the-java-agent">Enable the Java agent</h3>
+
+<p>Add the following flag to your JAVA_OPTS config var on Heroku:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="string">-javaagent:target/dependency/newrelic-agent.jar
+</span></pre></div>
+</div>
+
+
+<p>You can get the current value of your config var with:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> heroku config
+</span><span class="string">...
+</span><span class="string">JAVA_OPTS         =&gt; -Xmx384m -Xss512k -XX:+UseCompressedOops
+</span><span class="string">...
+</span></pre></div>
+</div>
+
+
+<p>Copy the value, add the Java agent flag and app name :</p>
+
+<div class="callout">
+<p>Make sure to enter your own app name in this example.</p>
+</div>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="comment">$</span><span class="function"> heroku config:set JAVA_OPTS='-Xmx384m -Xss512k -XX:+UseCompressedOops -javaagent:target/dependency/newrelic-agent.jar' NEW_RELIC_APP_NAME="YOUR APP NAME GOES HERE"
+</span><span class="string">Adding config vars:
+</span><span class="string">    JAVA_OPTS =&gt; -Xmx384m -Xss512.../newrelic-agent.jar
+</span></pre></div>
+</div>
+
+
+<h3 id="add-the-new-relic-agent-as-a-scala-play-dependency">Add the New Relic agent as a Scala/Play dependency</h3>
+
+<p>To use the New Relic API class or annotations:</p>
+
+<ol>
+<li>
+<p>Add the New Relic agent as a Scala/Play dependency</p>
+<p>Add this line (replacing x.x with the correct version) to the appDependencies method in your application’s project/Build.scala file:</p>
+<div class="CodeRay">
+<div class="code">
+<pre><span class="function">"com.newrelic.agent.java" % "newrelic-agent" % "2.x.x"</span></pre>
+</div>
+</div>
+<p>This also includes the API, so the newrelic-api dependency is optional.</p>
+</li>
+<li><p>Make sure JAVA_OPTS is specified on execute line of the Procfile.</p></li>
+<li><p>Push your changes to Heroku.</p></li>
+<li>
+<p>Update your JAVA_OPTS config.</p>
+<p>When setting the Java agent flag, you will need specify the version number. Your heroku config command should look similar to this:</p>
+<div class="CodeRay">
+<div class="code">
+<pre>
+<span class="comment">$</span> <span class="function">heroku config:set JAVA_OPTS="-XX:MaxPermSize=128m -Xmx334m -Xss512k -XX:+UseCompressedOops -Dnewrelic.bootstrap_classpath=true -javaagent:target/staged/newrelic-agent-2.X.X.jar"</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+<p>As above, you can get the current value of your config var by running <code>heroku config</code> with no arguments.</p>
+
+<h2 id="python-configuration">Python configuration</h2>
+
+<p>To install the Python package for the New Relic agent, create or edit the <code>requirements.txt</code> file, adding the line <code>newrelic</code>.</p>
+
+<p>Deploying your app will now install the New Relic agent.</p>
+
+<h3 id="initialize">Initialize</h3>
+
+<p>Modify the web entry in your <code>Procfile</code> to start with <code>newrelic-admin run-program</code>. The following example runs Django with a <code>run_gunicorn</code> management command:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>web: newrelic-admin run-program python hellodjango/manage.py run_gunicorn -b <span class="string"><span class="delimiter">"</span><span class="content">0.0.0.0:$PORT</span><span class="delimiter">"</span></span> -w <span class="integer">3</span>
+</pre></div>
+</div>
+
+
+<p>See the New Relic <a href="https://newrelic.com/docs/python/python-agent-and-heroku" target="_blank" title="Link opens in new window">full Python installation instructions</a> for more detail, or the New Relic <a href="https://newrelic.com/docs/python/new-relic-for-python#troubleshooting" target="_blank" title="Link opens in new window">Python troubleshooting tips</a> for further information.</p>
+
+<h3 id="updating-the-python-agent">Updating the Python agent</h3>
+
+<p>Heroku will cache packages and will not detect when a newer version of the Python agent is available. To force an upgrade to a newer version, explicitly list the version against the package name in the ‘requirements.txt’ file and push your application. Use this syntax: <code>newrelic==A.B.C.D</code></p>
+
+<p>Replace A.B.C.D with the version of the New Relic Python agent. When you change the version string to a newer version pip will perform the update.</p>
+
+<h2 id="clojure-configuration">Clojure configuration</h2>
+
+<p>If you’re using Leiningen 2.x and not using an uberjar-based deploy setup, you can add a <code>:java-agents</code> entry to <code>project.clj</code> to allow New Relic to instrument your app:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="symbol">:java-agents</span> [[com.newrelic.agent.java/newrelic-agent <span class="string"><span class="delimiter">"</span><span class="content">2.19.0</span><span class="delimiter">"</span></span>]]
+</pre></div>
+</div>
+
+
+<p>You can find the latest version of New Relic’s agent by <a href="http://search.maven.org/#search%7Cga%7C1%7Cnewrelic%2Dagent" target="_blank" title="Link opens in new window">searching the Central repository</a>. Once you’ve added that, simply add <code>newrelic.yml</code> to your codebase by downloading the <a href="https://raw.github.com/gist/2253296/newrelic.yml">template</a> and setting <code>app_name</code> and <code>license_key</code>, the latter of which can be found by running <code>heroku config:get NEW_RELIC_LICENSE_KEY</code>. Commit this file and deploy.</p>
+
+<h2 id="view-your-performance-data">View your performance data</h2>
+
+<p>Click on the New Relic icon in your list of Add-ons.  You will be redirected via SSO to your account on the New Relic site.</p>
+
+<ol>
+<li>From <a href="https://dashboard.heroku.com/" target="_blank" title="Link open in a new window">your dashboard</a>, select the app for which you have installed the New Relic add-on.</li>
+  <li>Select New Relic from your list of add-ons.</li>
+  <li>See <a href="https://newrelic.com/docs/" target="_blank" title="Link opens in new window">the New Relic documentation site</a> for more information on working with New Relic.</li>
+</ol>
+<h2 id="interpreting-new-relic-request-queueing">Interpreting New Relic request queueing</h2>
+
+<p>For Ruby and Python apps, the New Relic dashboard shows an app server response time component labeled “Request Queuing”. “Request Queuing” is the time elapsed from a router receiving a request to a Rails controller action or Python app code initiating processing of the request. During this time, the request goes through the following stages:</p>
+
+<ol>
+<li>Processing in the router</li>
+<li>Traveling over the network to a dyno</li>
+<li>Queuing in the TCP socket backlog on the dyno</li>
+<li>Processing by the web server (eg. Unicorn, Gunicorn, mod_wsgi)</li>
+<li>Processing by Rack middleware configured for the app</li>
+</ol>
+<p>All of the above count towards “Request Queuing” when New Relic
+displays where time was spent processing a request. Time spent in Django middleware is not included in the request queue time but is captured as ‘Python Time’ in the overview graph. For more details on how to interpret the request queuing metric, check out the
+<a href="https://newrelic.com/docs/features/request-queueing-and-tracking-front-end-time" target="_blank" title="Link opens in new window">New Relic Request Queuing</a> documentation.</p>
+
+      <section class="js-article-feedback article-feedback nocontent"><div class="step1">
+          <h2 id="feedback"><a href="#feedback">Feedback</a></h2>
+          <p>
+            If this article is incorrect or outdated, or omits critical information, please <a class="open" href="#">let us know</a>.
+            For all other issues, please see our <a href="https://devcenter.heroku.com/articles/support-channels">support channels</a>.
+          </p>
+          <form accept-charset="UTF-8" action="/articles/newrelic/feedback" autocomplete="off" class="step2" method="post">
+<div style="margin:0;padding:0;display:inline">
+<input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/jKFQgOHIvc9cCMhNy4HqHVrqRguPSMa5EIiY0hgcBM=">
+</div>
+            <input class="email" name="email" type="text" value=""><textarea name="feedback_text"></textarea><p class="record-warning">
+              <span class="js-hide-unless-logged-in">
+                The maintainer of this article will have access to your email address.
+              </span>
+              <span class="js-hide-if-logged-in">
+                <a href="/auth/login?back_to=%2Farticles%2Fnewrelic&amp;utm_campaign=login&amp;utm_medium=feedback&amp;utm_source=web">Login</a> to record your email address with this feedback.
+              </span>
+            </p>
+            <input type="submit" value="Submit">
+</form>        </div>
+        <p class="step3">
+          Your feedback has been sent to the <a href="mailto:devcenter-feedback@heroku.com">Dev Center</a> team. Thank you.
+        </p>
+      </section>
+</div>
+  </article><section class="nocontent" id="pagination"><a href="/articles/neo4j" id="previous">« Neo4j</a>
+  <a href="/articles/nodefly" id="next">NodeFly »</a>
+</section></section><script type="text/javascript">
+//<![CDATA[
+
+  var activeNav = 4;
+  var referenceId = 361;
+  var feedbackCounter = 9;
+
+//]]>
+</script>
+</div>
+    </div>
+
+    <script type="text/javascript">
+//<![CDATA[
+
+      if (document.cookie.indexOf('heroku_session=') != -1) {
+        $('#heroku-header-link-support').attr('href', 'https://support.heroku.com/');
+        $('#heroku-account-nav-logged_in').show();
+        $('#heroku-header-link-login').hide();
+      }
+
+//]]>
+</script><script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "rpm-images.newrelic.com/42/eum/rum.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-3.newrelic.com","ae43571cb3","2057789","dVwNTUMJVV9WR05REUJaAFVUFRZAW1oW",5,144,new Date().getTime(),"","","","",""]);</script>
+</body>
+</html>
