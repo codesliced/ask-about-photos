@@ -129,6 +129,7 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.7)
+    newrelic_rpm (3.6.5.130)
     nokogiri (1.5.10)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -244,6 +245,7 @@ DEPENDENCIES
   jquery-rails
   meta_request
   mini_magick
+  newrelic_rpm
   pg
   rack-mini-profiler
   rails (= 3.2.13)
