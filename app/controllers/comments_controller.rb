@@ -5,14 +5,19 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @commentable = find_commentable
-    @comment = @commentable.comments.build(params[:comment])
-    @comment.user_id = current_user.id
-    if @comment.save
-      flash[:notice] = "Successfully created comment"
-      redirect_to :back
+    if current_user
+      @commentable = find_commentable
+      @comment = @commentable.comments.build(params[:comment])
+      @comment.user_id = current_user.id
+      if @comment.save
+        flash[:notice] = "Successfully created comment"
+        redirect_to :back
+      else
+        render :action => 'new'
+      end
     else
-      render :action => 'new'
+      flash[:notice] = "Sign up to add a comment"
+      redirect_to '/signup'
     end
   end
 

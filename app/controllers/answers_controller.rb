@@ -8,11 +8,15 @@ class AnswersController < ApplicationController
   end
 
   def create
-    question = Question.find(params[:answer][:question_id])
-    if Answer.create(params[:answer].merge(:user_id => current_user.id))
-      redirect_to question
-    else
-      render question
+    if current_user
+      question = Question.find(params[:answer][:question_id])
+        if Answer.create(params[:answer].merge(:user_id => current_user.id))
+          redirect_to question
+        else
+          render question
+        end
+      else
+        redirect_to signup_path
     end
   end
 
