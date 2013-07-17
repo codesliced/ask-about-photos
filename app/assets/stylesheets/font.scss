@@ -1,0 +1,120 @@
+$content_font: 'Asap', sans-serif;
+$content_font_size: 12px;
+$content_font_color: #888;
+$header_font: 'Happy Monkey', cursive;
+$violet: #9d426b;
+$liteviolet: #BF7A99;
+$h2_line-height: 24px;
+$gray: #888;
+
+body {
+	font-family: $content_font;
+	color: $content_font_color;
+	font-size: $content_font_size;
+}
+
+a {
+	color: $violet;
+}
+
+h2, h3 {
+	line-height: $h2_line-height;
+	font-family: $header_font;
+}
+
+h1 {
+	font-family: $header_font;
+}
+
+
+.title {
+  font-size: 1.3em;
+  font-family: $header_font;
+}
+
+.title_username {
+	font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.header ul.nav li a i {
+   color: $liteviolet;
+}
+
+.nav-text {
+	color: $liteviolet;
+}
+
+.question-vote {
+  float:left;
+  font-size: 16px;
+  width: 12px;
+  text-align: center;
+}
+
+.single_title {
+	font-family: $header_font;
+}
+
+.description {
+  font-size: 0.75em;
+}
+
+.question_form_intro {
+	font-size: 1.2em;
+}
+
+
+.comment {
+  color: $violet;
+  text-align: left;
+  margin-left: 4%;
+}
+
+.username-comment {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.user_creation form input, .user_creation form textarea {
+	font-family: $content_font;
+	color: $gray;
+}
+
+.user_creation form input[type="submit"] {
+  font-family: $content_font;
+  font-size: 13px;
+  color: #FFF;
+}
+
+.comment_form form input, .comment_form form textarea {
+  font-family: $content_font;
+  color: $gray;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.comment_form form input[type="submit"] {
+  font-family: $content_font;
+  color: #FFF;
+  font-size: 11px;
+}
+
+.answer-form-header {
+	font-family: $header_font;
+	text-align: center;
+}
+
+.answer-form form input, .answer-form form textarea {
+  font-family: $content_font;
+  color: $gray;
+  font-size: 11px;
+  font-style: italic;
+}	
+
+.answer-form form input[type="submit"] {
+  font-family: $content_font;
+  font-size: 11px;
+  color: #fff;
+}	

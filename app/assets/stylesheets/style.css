@@ -12,15 +12,14 @@
 body {
     background: #fff;
     text-align: center;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+/*    font-family: Helvetica, Arial, sans-serif;
     color: #888;
-    font-size: 12px;
+    font-size: 12px;*/
 }
 
 .violet { color: #9d426b; }
 
 a {
-    color: #9d426b;
     text-decoration: none;
     -o-transition: all .3s;
     -moz-transition: all .3s;
@@ -32,9 +31,9 @@ a:hover { color: #888; text-decoration: none; }
 
 strong { font-weight: bold; }
 
-h2 h3 {
+/*h2 h3 {
     line-height:24px;
-}
+}*/
 
 
 /* ----- Header ----- */
@@ -48,7 +47,6 @@ h2 h3 {
     left: 0;
     margin: 0;
     text-align: left;
-    font-family: arapey, sans-serif;
     font-size: 48px;
     margin-top: 15px;
     margin-left: 10px;
@@ -72,16 +70,6 @@ h2 h3 {
     box-shadow: none;
 }
 
-
-/*.header a.brand {
-    display: inline-block;
-    text-indent: -9999px;
-    width: 280px;
-    height: 63px;
-    padding: 30px 0;
-    background: url(../img/logo.png) 20px center no-repeat;
-}
-*/
 .header ul.nav {
     font-size: 14px;
     text-transform: uppercase;
@@ -104,13 +92,7 @@ h2 h3 {
     color: #fff;
 }
 
-.header ul.nav li a i {
-/*    line-height: 35px;*/
-    color: #aaa;
-}
-
 .header ul.nav li a:hover i { color: #fff; }
-
 
 
 /* ----- Presentation ----- */
@@ -120,7 +102,6 @@ h2 h3 {
 }
 
 .presentation h2 {
-    font-family: arapey, sans-serif;
     font-size: 30px;
     color: #5d5d5d;
 }
@@ -209,52 +190,19 @@ h2 h3 {
   height: 250px;
 }
 
-.title {
-    font-size: 115%;
-}
-
-.title_username {
-    margin-bottom: 10px;
-}
-
 /* QUESTIONS PAGE */
-
-.single_question {
-  font-family: arapey, sans-serif;
-  text-align: right;
-}
-
-.question-vote {
-    float:left;
-    font-size: 16px;
-    width: 12px;
-    text-align: center;
-}
 
 .single_photo_upload img {
     max-width: 500px;
-}
-
-.description {
-    font-size: 10px;
 }
 
 .comment_on_question {
     margin-left: 14px;
 }
 
-.comment {
-    color: #9d426b;
-    text-align: left;
-    margin-left: 4%;
+.single_question {
+  margin-left: 55px;
 }
-
-.username-comment {
-    font-size: 80%;
-    text-transform: uppercase;
-    color: gray;
-}
-
 
 /* ----- Footer ----- */
 
@@ -681,8 +629,6 @@ footer .social a:hover { background-position: left top; }
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #888;
     font-size: 13px;
     font-style: italic;
 }
@@ -710,9 +656,6 @@ footer .social a:hover { background-position: left top; }
     height: 30px;
     background: #9d426b;
     border: 0;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: #fff;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -735,22 +678,11 @@ footer .social a:hover { background-position: left top; }
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
 }
 
-/*.user_creation form input:-moz-placeholder, .user_creation form textarea:-moz-placeholder { color: #ccc; }
-.user_creation form input:-ms-input-placeholder, .user_creation form textarea:-ms-input-placeholder { color: #ccc; }
-.user_creation form input::-webkit-input-placeholder, .user_creation form textarea::-webkit-input-placeholder { color: #ccc; }
-*/
-
-
 /********** ===== Comment Form ====== **********/
 
 .comment_form {
     margin-top: 10px;
 }
-
-/*.comment_form form {
-    margin-top: 25px;
-    padding: 0 20px;
-}*/
 
 .comment_form form input, .comment_form form textarea {
     height: 12px;
@@ -761,10 +693,6 @@ footer .social a:hover { background-position: left top; }
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #888;
-    font-size: 11px;
-    font-style: italic;
 }
 
 .comment_form form input:focus, .comment_form form textarea:focus {
@@ -790,9 +718,6 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    color: #fff;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -825,23 +750,9 @@ footer .social a:hover { background-position: left top; }
     max-width: 200px;
 }
 
-.question_answers {
-
-}
-
 .answer-form {
     margin-top: 40px;
 }
-
-.answer-form-header {
-    font-family: arapey, sans-serif;
-    text-align:center;
-}
-
-/*.answer-form form {
-    margin-top: 25px;
-    padding: 0 20px;
-}*/
 
 .answer-form form input, .answer-form form textarea {
     height: 12px;
@@ -852,10 +763,6 @@ footer .social a:hover { background-position: left top; }
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    color: #888;
-    font-size: 11px;
-    font-style: italic;
 }
 
 .answer-form form input:focus, .answer-form form textarea:focus {
@@ -883,14 +790,12 @@ footer .social a:hover { background-position: left top; }
     border: 0;
     height: 20px;
 }
+
 .answer-form form input[type="submit"] {
     width: 60px;
     height: 20px;
     background: #9d426b;
     border: 0;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    color: #fff;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -916,6 +821,10 @@ footer .social a:hover { background-position: left top; }
 .answer-form-intro {
     text-align: left;
     font-size: 16px;
+}
+
+.answer-form-header {
+    margin-top: 40px;
 }
 
 
@@ -1115,4 +1024,36 @@ ul.portfolio-img li {
 
 }
 
+.ask-container {
+    width: 400px;
+    margin: 0 auto;
+}
 
+.question_form_intro {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.question_field {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.choose_button {
+    margin-left: -10;
+}
+
+.ask-container form input[type="submit"] {
+    height: 30px;
+    background: #9d426b;
+    border: 0;
+    color: #FFF;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.ask-container form input[type="submit"]:hover {
+    background-color: black;
+}
