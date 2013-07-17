@@ -30,6 +30,7 @@ gem 'mini_magick'
 gem 'figaro'
 gem 'thin'
 gem 'dalli'
+gem 'newrelic_rpm'
 
 
 # To use debugger
