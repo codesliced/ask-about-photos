@@ -4,12 +4,9 @@
   <title>PhotoOverflow</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <script src="//use.edgefonts.net/arapey.js"></script>
-	<script src="//use.edgefonts.net/josefin-sans.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Asap:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -26,16 +23,16 @@
 	                        <ul class="nav pull-right">
 	                            <li>
 	                                <%= link_to root_path do %>
-	                                <i class="icon-home"></i><br />Home
+	                                <i class="icon-home"></i><br /><span class="nav-text">Home</span>
 	                                <% end %>
 	                            </li>
 	                            <li>
 	                                <%= link_to ask_question_path  do %>
-	                                <i class="icon-question-sign"></i><br />Ask a question
+	                                <i class="icon-question-sign"></i><br /><span class="nav-text">Ask a question</span>
 	                                  <% end %>
 	                            </li>
 			                        <li>
-	                                <%= render 'shared/navbar_username' %> 
+	                                <%= render 'shared/navbar_username' %>
 	                            </li>
 	                            <li>
 	                            	  <%= render 'shared/navbar_logout' %> 
