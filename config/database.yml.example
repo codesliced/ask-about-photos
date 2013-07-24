@@ -1,0 +1,18 @@
+test:
+  adapter: postgresql
+  encoding: UTF8
+  database: photo_overflow_test
+  host: localhost
+ 
+development:
+  adapter: postgresql
+  encoding: UTF8
+  database: photo_overflow_dev
+  host: localhost 
+  
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: photo_overflow_prod
+  pool: 5
+  username: photo_overflow
