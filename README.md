@@ -21,8 +21,10 @@ Started at Dev Bootcamp Chicago in June 2013 as a 3-day group project that I cho
 
 To run this app you'll need:
 
-Postgresql 9.2+ (it uses a number of DB specific features)
 Ruby 1.9.3 
+
+Postgresql 9.2+ (it uses a number of DB specific features)
+
 
 
 ##Install
