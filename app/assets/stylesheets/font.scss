@@ -1,7 +1,7 @@
 $content_font: 'Asap', sans-serif;
 $content_font_size: 12px;
 $content_font_color: #888;
-$header_font: 'Happy Monkey', cursive;
+$header_font: 'Quicksand', sans-serif;
 $violet: #9d426b;
 $liteviolet: #BF7A99;
 $h2_line-height: 24px;
@@ -24,12 +24,14 @@ h2, h3 {
 
 h1 {
 	font-family: $header_font;
+  font-weight: 300;
 }
 
 
 .title {
   font-size: 1.2em;
   font-family: $header_font;
+  font-weight: 400;
 }
 
 .title_username {
@@ -43,6 +45,8 @@ h1 {
 
 .nav-text {
 	color: $liteviolet;
+  font-family: $header_font;
+  font-weight: 400;
 }
 
 .question-vote {
