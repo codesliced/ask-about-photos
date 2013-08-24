@@ -35,6 +35,22 @@ strong { font-weight: bold; }
     line-height:24px;
 }*/
 
+/*h1 h2 h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}*/
+
+/*.single_title h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: -5em;
+}
+
+.single_title h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: -5em;
+}*/
 
 /* ----- Header ----- */
 
@@ -48,8 +64,8 @@ strong { font-weight: bold; }
     margin: 0;
     text-align: left;
     font-size: 48px;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .navbar {
@@ -681,7 +697,7 @@ footer .social a:hover { background-position: left top; }
 /********** ===== Comment Form ====== **********/
 
 .comment_form {
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .comment_form form input, .comment_form form textarea {
@@ -740,18 +756,46 @@ footer .social a:hover { background-position: left top; }
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
 }
 
-/********** ===== Answer Form ====== **********/
+
+/********** ===== Answers ====== **********/
 
 .question_answers {
     text-align: left;
 }
 
 .question_answers img {
+    min-width: 190px;
     max-width: 200px;
 }
 
+.answer-vote {
+    width: 11%;
+    padding-right: 2%;
+    vertical-align: top;
+}
+.answer-text {
+    width: 87%;
+    margin-left: -1;
+}
+
+.answer img {
+    margin-bottom: 5px;
+}
+
+
+.answer-username {
+    text-transform: uppercase;
+
+}
+
+
+
+/********** ===== Answer Form ====== **********/
+
+
+
 .answer-form {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .answer-form form input, .answer-form form textarea {
@@ -773,7 +817,7 @@ footer .social a:hover { background-position: left top; }
 }
 
 .answer-form form textarea {
-    height: 160px;
+    height: 100px;
 }
 
 .answer-form form input[type="text"] {
@@ -833,6 +877,10 @@ footer .social a:hover { background-position: left top; }
 
 .comment_on_question .comment {
   margin-left: 140px;
+}
+
+.comment-on-answer .comment {
+  margin-left: 0;
 }
 
 /********** ----- PORTFOLIO PAGE ----- **********/
