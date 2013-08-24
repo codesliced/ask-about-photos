@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.7")
   s.rubyforge_project = "nokogiri"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Nokogiri (\u{e9}\u{8b}\u{b8}) is an HTML, XML, SAX, and Reader parser"
 
   if s.respond_to? :specification_version then

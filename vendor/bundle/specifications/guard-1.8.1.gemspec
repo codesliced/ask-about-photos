@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://guardgem.org"
   s.require_paths = ["lib"]
   s.rubyforge_project = "guard"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Guard keeps an eye on your file modifications"
 
   if s.respond_to? :specification_version then

@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://rubygems.org/gems/rb-fsevent"
   s.require_paths = ["lib"]
   s.rubyforge_project = "rb-fsevent"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Very simple & usable FSEvents API"
 
   if s.respond_to? :specification_version then

@@ -14,6 +14,15 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/bdurand/lumberjack"
   s.rdoc_options = ["--charset=UTF-8", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "A simple, powerful, and very fast logging utility that can be a drop in replacement for Logger or ActiveSupport::BufferedLogger."
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 3
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+    else
+    end
+  else
+  end
 end

@@ -17,6 +17,15 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.2")
   s.rubyforge_project = "columnize"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Module to format an Array as an Array of String aligned in columns"
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 3
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+    else
+    end
+  else
+  end
 end

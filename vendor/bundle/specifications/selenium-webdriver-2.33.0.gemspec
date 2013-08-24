@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "jari.bakken@gmail.com"
   s.homepage = "http://selenium.googlecode.com"
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "The next generation developer focused tool for automated testing of webapps"
 
   if s.respond_to? :specification_version then

@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://rubygems.org/gems/guard-rspec"
   s.require_paths = ["lib"]
   s.rubyforge_project = "guard-rspec"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Guard gem for RSpec"
 
   if s.respond_to? :specification_version then

@@ -13,6 +13,15 @@ Gem::Specification.new do |s|
   s.files = ["ext/debug_inspector/extconf.rb"]
   s.homepage = "https://github.com/banister/debug_inspector"
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "A Ruby wrapper for the MRI 2.0 debug_inspector API"
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 3
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+    else
+    end
+  else
+  end
 end

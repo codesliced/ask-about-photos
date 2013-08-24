@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--title", "bcrypt-ruby", "--line-numbers", "--inline-source", "--main", "README.md"]
   s.require_paths = ["lib"]
   s.rubyforge_project = "bcrypt-ruby"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "OpenBSD's bcrypt() password hashing algorithm."
 
   if s.respond_to? :specification_version then

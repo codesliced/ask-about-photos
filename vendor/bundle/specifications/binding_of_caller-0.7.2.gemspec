@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files = ["ext/binding_of_caller/extconf.rb"]
   s.homepage = "http://github.com/banister/binding_of_caller"
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack."
 
   if s.respond_to? :specification_version then

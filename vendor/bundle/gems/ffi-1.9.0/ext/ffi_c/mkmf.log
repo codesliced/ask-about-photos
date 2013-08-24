@@ -1,7 +1,7 @@
 package configuration for libffi is not found
 have_header: checking for ffi.h... -------------------- no
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'      -lruby-static  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -9,7 +9,7 @@ checked program was:
 3: int main() {return 0;}
 /* end */
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -22,7 +22,7 @@ checked program was:
 
 find_header: checking for ffi.h in /usr/local/include,/usr/include/ffi... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -31,7 +31,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/local/include conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/local/include conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -40,7 +40,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/include/ffi conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/include/ffi conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -52,7 +52,7 @@ checked program was:
 
 have_library: checking for ffi_call() in -lffi... -------------------- yes
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'      -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib     -lruby-static -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -68,7 +68,7 @@ checked program was:
 
 have_func: checking for ffi_prep_closure()... -------------------- yes
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:5: error: ‘ffi_prep_closure’ undeclared (first use in this function)
 conftest.c:5: error: (Each undeclared identifier is reported only once
@@ -82,7 +82,7 @@ checked program was:
 5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return 0; }
 /* end */
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -96,7 +96,7 @@ checked program was:
 
 have_func: checking for ffi_raw_call()... -------------------- no
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:5: error: ‘ffi_raw_call’ undeclared (first use in this function)
 conftest.c:5: error: (Each undeclared identifier is reported only once
@@ -110,10 +110,10 @@ checked program was:
 5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return 0; }
 /* end */
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_ffi_raw_call", referenced from:
-      _t in ccIQWdJZ.o
+      _t in ccaKpa58.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
@@ -129,7 +129,7 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- yes
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -143,7 +143,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:5: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
 conftest.c:5: error: (Each undeclared identifier is reported only once
@@ -157,7 +157,7 @@ checked program was:
 5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
 /* end */
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -171,7 +171,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:5: error: ‘rb_thread_call_without_gvl’ undeclared (first use in this function)
 conftest.c:5: error: (Each undeclared identifier is reported only once
@@ -185,7 +185,7 @@ checked program was:
 5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
 /* end */
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -199,7 +199,7 @@ checked program was:
 
 have_func: checking for ffi_prep_cif_var()... -------------------- no
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:5: error: ‘ffi_prep_cif_var’ undeclared (first use in this function)
 conftest.c:5: error: (Each undeclared identifier is reported only once
@@ -213,10 +213,10 @@ checked program was:
 5: int t() { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return 0; }
 /* end */
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'     -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_ffi_prep_cif_var", referenced from:
-      _t in ccEBPO5N.o
+      _t in cc7q6anA.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:

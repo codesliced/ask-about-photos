@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--exclude=ext/ffi_c/.*\\.o$", "--exclude=ffi_c\\.(bundle|so)$"]
   s.require_paths = ["lib", "ext/ffi_c"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.7")
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Ruby FFI"
 
   if s.respond_to? :specification_version then

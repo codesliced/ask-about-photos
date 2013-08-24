@@ -1,7 +1,6 @@
 have_struct_member: checking for rb_method_entry_t.called_id in method.h... -------------------- no
 
-"gcc -o conftest -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib'      -lruby-static  -lpthread -ldl -lobjc "
-/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib/ruby/1.9.1/mkmf.rb:317: warning: Insecure world writable dir /Users/doublepullback/Desktop/photo_overflow/vendor in PATH, mode 040777
+"gcc -o conftest -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/temp/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -9,7 +8,7 @@ checked program was:
 3: int main() {return 0;}
 /* end */
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 conftest.c:3:20: error: method.h: No such file or directory
 conftest.c:7: error: ‘rb_method_entry_t’ undeclared here (not in a function)
 conftest.c:7: error: expected expression before ‘)’ token
@@ -28,7 +27,7 @@ checked program was:
 
 have_struct_member: checking for rb_control_frame_t.method_id in method.h... -------------------- no
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/doublepullback/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392 -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/temp/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 conftest.c:3:20: error: method.h: No such file or directory
 conftest.c:7: error: ‘rb_control_frame_t’ undeclared here (not in a function)
 conftest.c:7: error: expected expression before ‘)’ token
@@ -47,7 +46,7 @@ checked program was:
 
 have_struct_member: checking for rb_method_entry_t.called_id in method.h... -------------------- no
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 conftest.c:3:20: error: method.h: No such file or directory
 conftest.c:7: error: ‘rb_method_entry_t’ undeclared here (not in a function)
 conftest.c:7: error: expected expression before ‘)’ token
@@ -66,7 +65,7 @@ checked program was:
 
 have_struct_member: checking for rb_control_frame_t.method_id in method.h... -------------------- no
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 conftest.c:3:20: error: method.h: No such file or directory
 conftest.c:7: error: ‘rb_control_frame_t’ undeclared here (not in a function)
 conftest.c:7: error: expected expression before ‘)’ token
@@ -85,7 +84,7 @@ checked program was:
 
 have_struct_member: checking for rb_method_entry_t.called_id in method.h... -------------------- yes
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -101,7 +100,7 @@ checked program was:
 
 have_header: checking for vm_core.h... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -113,7 +112,7 @@ checked program was:
 
 have_header: checking for iseq.h... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -125,7 +124,7 @@ checked program was:
 
 have_header: checking for insns.inc... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -137,7 +136,7 @@ checked program was:
 
 have_header: checking for insns_info.inc... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -149,7 +148,7 @@ checked program was:
 
 have_header: checking for eval_intern.h... -------------------- yes
 
-"gcc -E -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"gcc -E -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -161,7 +160,7 @@ checked program was:
 
 have_type: checking for struct iseq_line_info_entry in vm_core.h,iseq.h... -------------------- no
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 conftest.c:8: error: invalid application of ‘sizeof’ to incomplete type ‘conftest_type’ 
 conftest.c:8: error: size of array ‘conftestval’ is negative
 checked program was:
@@ -180,7 +179,7 @@ checked program was:
 
 have_type: checking for struct iseq_insn_info_entry in vm_core.h,iseq.h... -------------------- yes
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -197,7 +196,7 @@ checked program was:
 
 block in <main>: checking for if rb_iseq_compile_with_option was added an argument filepath... -------------------- yes
 
-"gcc -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"gcc -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.1 -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392  -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"

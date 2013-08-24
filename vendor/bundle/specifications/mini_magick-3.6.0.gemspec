@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/minimagick/minimagick"
   s.require_paths = ["lib"]
   s.requirements = ["You must have ImageMagick or GraphicsMagick installed"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick"
 
   if s.respond_to? :specification_version then

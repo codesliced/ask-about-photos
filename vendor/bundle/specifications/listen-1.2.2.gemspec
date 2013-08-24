@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/guard/listen"
   s.require_paths = ["lib"]
   s.rubyforge_project = "listen"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "Listen to file modifications"
 
   if s.respond_to? :specification_version then

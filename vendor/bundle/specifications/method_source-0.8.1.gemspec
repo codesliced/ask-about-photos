@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "jrmair@gmail.com"
   s.homepage = "http://banisterfiend.wordpress.com"
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "retrieve the sourcecode for a method"
 
   if s.respond_to? :specification_version then

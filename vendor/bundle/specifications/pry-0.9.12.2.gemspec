@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files = ["bin/pry"]
   s.homepage = "http://pry.github.com"
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "An IRB alternative and runtime developer console"
 
   if s.respond_to? :specification_version then

@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/jarib/childprocess"
   s.require_paths = ["lib"]
   s.rubyforge_project = "childprocess"
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.23"
   s.summary = "This gem aims at being a simple and reliable solution for controlling external programs running in the background on any Ruby / OS combination."
 
   if s.respond_to? :specification_version then

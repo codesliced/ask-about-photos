@@ -12,11 +12,11 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1
-hdrdir = /Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1
-arch_hdrdir = /Users/doublepullback/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/$(arch)
+topdir = /Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1
+hdrdir = /Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1
+arch_hdrdir = /Users/temp/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/doublepullback/.rbenv/versions/1.9.3-p392
+prefix = $(DESTDIR)/Users/temp/.rbenv/versions/1.9.3-p392
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -46,8 +46,8 @@ sbindir = $(exec_prefix)/sbin
 bindir = $(exec_prefix)/bin
 rubylibdir = $(rubylibprefix)/$(ruby_version)
 archdir = $(rubylibdir)/$(arch)
-sitelibdir = $(DESTDIR)/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-1.6.0/ext/ruby_debug/.gem.20130629-37684-r9stsn
-sitearchdir = $(DESTDIR)/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-1.6.0/ext/ruby_debug/.gem.20130629-37684-r9stsn
+sitelibdir = $(sitedir)/$(ruby_version)
+sitearchdir = $(sitelibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 
@@ -71,9 +71,9 @@ warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long 
 CFLAGS   = -fno-common  -O3 -Wno-error=shorten-64-to-32  -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_RB_METHOD_ENTRY_T_CALLED_ID -DHAVE_ST_CALLED_ID -DHAVE_VM_CORE_H -DHAVE_ISEQ_H -DHAVE_INSNS_INC -DHAVE_INSNS_INFO_INC -DHAVE_EVAL_INTERN_H -DHAVE_TYPE_STRUCT_ISEQ_INSN_INFO_ENTRY -DRB_ISEQ_COMPILE_5ARGS -I/Users/doublepullback/Desktop/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392
+CPPFLAGS = -DHAVE_RB_METHOD_ENTRY_T_CALLED_ID -DHAVE_ST_CALLED_ID -DHAVE_VM_CORE_H -DHAVE_ISEQ_H -DHAVE_INSNS_INC -DHAVE_INSNS_INFO_INC -DHAVE_EVAL_INTERN_H -DHAVE_TYPE_STRUCT_ISEQ_INSN_INFO_ENTRY -DRB_ISEQ_COMPILE_5ARGS -I/Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-ruby_core_source-1.2.3/lib/debugger/ruby_core_source/ruby-1.9.3-p392
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. -L'/Users/doublepullback/.rbenv/versions/1.9.3-p392/lib' 
+ldflags  = -L. -L'/Users/temp/.rbenv/versions/1.9.3-p392/lib'  -L/usr/local/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -85,10 +85,10 @@ EXEEXT =
 RUBY_BASE_NAME = ruby
 RUBY_INSTALL_NAME = ruby
 RUBY_SO_NAME = ruby
-arch = x86_64-darwin12.4.0
+arch = x86_64-darwin12.4.1
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /Users/doublepullback/.rbenv/versions/1.9.3-p392/bin/ruby
+ruby = /Users/temp/.rbenv/versions/1.9.3-p392/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
@@ -126,8 +126,8 @@ STATIC_LIB =
 
 BINDIR        = $(bindir)
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR    = $(sitelibdir)$(target_prefix)
-RUBYARCHDIR   = $(sitearchdir)$(target_prefix)
+RUBYLIBDIR = /Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-1.6.0/lib$(target_prefix)
+RUBYARCHDIR = /Users/temp/Desktop/_amp/_projects/photo_overflow/vendor/bundle/gems/debugger-1.6.0/lib$(target_prefix)
 HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 
