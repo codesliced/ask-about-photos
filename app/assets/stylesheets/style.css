@@ -20,7 +20,7 @@ body {
 
 a {
     text-decoration: none;
-    @include transition(all .3s);
+    @include transition( (all .3s) );
 }
 
 a:hover { color: #888; text-decoration: none; }
@@ -151,7 +151,7 @@ strong { font-weight: bold; }
 
 .portfolio .work:hover img {
     opacity: 0.7;
-    @include transition(all .3s);
+    @include transition( (all .3s) );
 }
 
 .portfolio .work:hover {
@@ -159,7 +159,7 @@ strong { font-weight: bold; }
         0 5px 15px 0 rgba(0,0,0,.05),
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-    @include transition(all .5s);
+        @include transition( (all .5s) );
 }
 
 .portfolio .work .icon-awesome a:hover {
@@ -447,7 +447,7 @@ footer .social a:hover { background-position: left top; }
 
 .team-text:hover img {
     opacity: 0.7;
-    @include transition(.3s);
+    @include transition( (all .3s) );
 }
 
 .team-text:hover {
@@ -455,7 +455,7 @@ footer .social a:hover { background-position: left top; }
         0 5px 15px 0 rgba(0,0,0,.05),
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-        @include transition(.5s);
+        @include transition( (all .5s) );
 }
 
 .team-text .social-links {
@@ -667,7 +667,7 @@ footer .social a:hover { background-position: left top; }
     height: 30px;
     background: #9d426b;
     border: 0;
-    @include transition(.3s);
+    @include transition( (all .3s) );
 }
 
 .user_creation form input[type="submit"]:hover {
@@ -726,7 +726,7 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    @include transition(.3s);
+    @include transition( (all .3s) );
 }
 
 .comment_form form input[type="submit"]:hover {
@@ -829,7 +829,7 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    @include transition(.3s);
+    @include transition( (all .3s) );
 }
 
 .answer-form form input[type="submit"]:hover {
@@ -1089,7 +1089,7 @@ ul.portfolio-img li {
     background: #9d426b;
     border: 0;
     color: #FFF;
-    @include transition(.3s);
+    @include transition( (all .3s) );
 }
 
 .ask-container form input[type="submit"]:hover {
