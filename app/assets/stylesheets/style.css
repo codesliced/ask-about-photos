@@ -443,10 +443,7 @@ footer .social a:hover { background-position: left top; }
 
 .team-text:hover img {
     opacity: 0.7;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .team-text:hover {
@@ -454,10 +451,7 @@ footer .social a:hover { background-position: left top; }
         0 5px 15px 0 rgba(0,0,0,.05),
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-    -o-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    -ms-transition: all .5s;
+        @include transition(.5s);
 }
 
 .team-text .social-links {
@@ -582,10 +576,7 @@ footer .social a:hover { background-position: left top; }
     box-shadow:
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .contact-us form button:hover {
@@ -672,10 +663,7 @@ footer .social a:hover { background-position: left top; }
     height: 30px;
     background: #9d426b;
     border: 0;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .user_creation form input[type="submit"]:hover {
@@ -734,10 +722,7 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .comment_form form input[type="submit"]:hover {
@@ -840,10 +825,7 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-tran`sition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .answer-form form input[type="submit"]:hover {
@@ -1103,10 +1085,7 @@ ul.portfolio-img li {
     background: #9d426b;
     border: 0;
     color: #FFF;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
+    @include transition(.3s);
 }
 
 .ask-container form input[type="submit"]:hover {
