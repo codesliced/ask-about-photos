@@ -17,9 +17,10 @@ a {
 	color: $violet;
 }
 
-h2, h3 {
+h2, h3, h4{
 	line-height: $h2_line-height;
 	font-family: $header_font;
+  font-weight: 400;
 }
 
 h1 {
@@ -58,6 +59,8 @@ h1 {
 
 .single_title {
 	font-family: $header_font;
+  font-size: -5em;
+  font-weight: 400;
 }
 
 .description {
