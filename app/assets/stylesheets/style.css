@@ -1,5 +1,4 @@
 /*
- *
  * Template Name: Andia
  * Template URI: http://azmind.com
  * Description: Andia - Responsive Agency Template
@@ -127,7 +126,15 @@ strong { font-weight: bold; }
 }
 
 
+.description img {
+    text-align: left;
+    margin-left: 150px;
+}
 
+.description p {
+    text-align: left;
+    margin-left: 150px;
+}
 
 /* ----- Portfolio ----- */
 
