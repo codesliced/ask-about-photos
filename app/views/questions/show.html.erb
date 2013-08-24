@@ -19,31 +19,37 @@
 
 <div class="section group">    
   <div class="col span_4_of_6">
-    <span class="question-vote" id='voting-panel'>
-    <%= render partial: 'shared/voting', locals: { votable: @question } %>
-  </span>
-  <div class="single_photo_upload">
-    <p><img src="<%= @question.path || @question.file%>"></p>
+    <table>
+      <tr>
+        <td class="question-vote" id='voting-panel'>
+          <%= render partial: 'shared/voting', locals: { votable: @question } %>
+        </td>
+        <td class="single_photo_upload">
+          <p><img src="<%= @question.path || @question.file%>"></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="question-vote"></td>
+        <td class="description">
+          <p><%= @question.content %></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="question-vote"></td>
+        <td class="comment_on_question">
+           <% @question.comments.each do |comment| %>
+             <%= render partial: 'comments/comment', locals: { comment: comment } %>
+           <% end %>
+           <p><%= render partial: 'comments/new', locals: { commentable: @question } %></p>
+        </td>
+      </tr>
+    </table>
   </div>
-       
-  <div class="description">
-    <p><%= @question.content %></p>
-  </div>
-
-  <div class="comment_on_question">
-   <% @question.comments.each do |comment| %>
-     <%= render partial: 'comments/comment', locals: { comment: comment } %>
-   <% end %>
-
-   <p><%= render partial: 'comments/new', locals: { commentable: @question } %></p>
-  </div>
-</div>
-  
   
 <div class="col span_2_of_6">
   <div class="question_answers">
     <% @question.answers.each do |answer| %>
-      <%= render partial: 'answers/show', locals: { answer: answer } %>
+       <%= render partial: 'answers/show', locals: { answer: answer } %>
     <% end %>
   </div>
    <%= render "answers/new" %>

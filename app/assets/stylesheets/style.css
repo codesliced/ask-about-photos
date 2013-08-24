@@ -126,14 +126,16 @@ strong { font-weight: bold; }
 }
 
 
+.question-vote {
+    margin-right: 50px;
+}
+
 .description img {
     text-align: left;
-    margin-left: 150px;
 }
 
 .description p {
     text-align: left;
-    margin-left: 150px;
 }
 
 /* ----- Portfolio ----- */
@@ -219,13 +221,17 @@ strong { font-weight: bold; }
     max-width: 500px;
 }
 
-.comment_on_question {
+/*.comment_on_question {
     margin-left: 14px;
+}*/
+
+.comment {
+    text-align: left;
 }
 
-.single_question {
+/*.single_question {
   margin-left: 55px;
-}
+}*/
 
 /* ----- Footer ----- */
 
