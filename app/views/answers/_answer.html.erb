@@ -3,7 +3,7 @@
   <div class="answer"><span class="answer-vote" id='voting-panel'>
     <%= render partial: 'shared/voting', locals: { votable: answer } %>
   </span>  <img src="<%= answer.path || answer.file  %>"> <%= answer.content %> 
-  <span class="username">Answer by: <%= answer.user.username %></span></div>
+  <div class="answer-username">Answer by: <%= answer.user.username %></div></div>
 </div>
 
 <% answer.comments.each do |comment| %>
