@@ -6,9 +6,6 @@
  * Author URI: http://azmind.com
  *
  */
-
-@import "active_admin/mixins";
-
 body {
     background: #fff;
     text-align: center;
