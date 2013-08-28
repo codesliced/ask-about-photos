@@ -18,6 +18,11 @@ body {
 
 a {
     text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     
 }
 
@@ -149,7 +154,11 @@ strong { font-weight: bold; }
 
 .portfolio .work:hover img {
     opacity: 0.7;
-    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .portfolio .work:hover {
@@ -157,7 +166,11 @@ strong { font-weight: bold; }
         0 5px 15px 0 rgba(0,0,0,.05),
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-        /*@include transition( (all .5s) );*/
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
 }
 
 .portfolio .work .icon-awesome a:hover {
@@ -453,7 +466,11 @@ footer .social a:hover { background-position: left top; }
         0 5px 15px 0 rgba(0,0,0,.05),
         0 1px 25px 0 rgba(0,0,0,.05) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
-        /*@include transition( (all .5s) );*/
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
 }
 
 .team-text .social-links {
@@ -665,7 +682,11 @@ footer .social a:hover { background-position: left top; }
     height: 30px;
     background: #9d426b;
     border: 0;
-    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .user_creation form input[type="submit"]:hover {
@@ -724,7 +745,11 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; 
 }
 
 .comment_form form input[type="submit"]:hover {
@@ -827,7 +852,11 @@ footer .social a:hover { background-position: left top; }
     height: 20px;
     background: #9d426b;
     border: 0;
-    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .answer-form form input[type="submit"]:hover {
